@@ -7,7 +7,7 @@ class Books(models.Model):
     detail = models.TextField()
 
     def shortSum(self):
-        return self.detail[:150]
+        return self.detail[:100]+"..."
 
     def __str__(self):
         return self.title
